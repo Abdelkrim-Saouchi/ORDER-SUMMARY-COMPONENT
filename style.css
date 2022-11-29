@@ -36,6 +36,8 @@ main {
     background-color: var(--white-off);
     border-radius: 16px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .card img {
@@ -126,4 +128,22 @@ button:is(:hover, :focus) {
 .panel a:is(:hover, :focus) {
     text-decoration: none;
     color: hsl(245deg 83% 68%);
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+    .card {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1360px) {
+    .card {
+        max-width: 35%;
+    }
+}
+
+@media (min-width: 1361px) {
+    .card {
+        max-width: 25%;
+    }
 }
