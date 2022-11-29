@@ -24,8 +24,8 @@ body {
 main {
     width: 100vw;
     min-height: 100vh;
+    background: url("images/pattern-background-desktop.svg") no-repeat;
     background-color: var(--pale-blue);
-    background: url(images/pattern-background-mobile.svg) cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,11 +139,13 @@ button:is(:hover, :focus) {
 @media (min-width: 961px) and (max-width: 1360px) {
     .card {
         max-width: 35%;
+        box-shadow: 0 10px 6px 1px rgba(0, 0, 0, 0.034);
     }
 }
 
 @media (min-width: 1361px) {
     .card {
         max-width: 25%;
+        box-shadow: 0 10px 6px 1px rgba(0, 0, 0, 0.034);
     }
 }
